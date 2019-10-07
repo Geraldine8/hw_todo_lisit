@@ -1,0 +1,45 @@
+ul {
+  list-style-type: none;
+  padding-inline-start: 0px;
+  width: 50%;
+  margin: auto;
+}
+
+li {
+  padding: 10px;
+  margin-bottom: 10px;
+
+}
+
+.low-priority {
+  border: 3px solid green;
+}
+
+.high-priority {
+  border: 3px solid red;
+}
+/* /border: 1px solid black; */
+
+#task {
+  padding: 10px;
+  margin-bottom: 40px;
+  width: 30%;
+  font-size: 20px;
+}
+
+.button {
+  background-color: black;
+  color: white;
+  font-size: 1em;
+
+}
+
+body {
+  background-color: #FFF1D0;
+  /* display: inline-block; */
+}
+
+#app {
+  text-align: center;
+  padding-top: 20px;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>ToDo List</title>
+  <script src="./js/bundle.js"></script>
+  <link rel="stylesheet" type="text/css "href="css/style.css"/>
+</head>
+<body>
+  <div id="app">
+    <form v-on:submit.prevent="saveTodo">
+      <input id="task" type="text" v-model="todoDescription"/>
+      <input name="priority" type="radio" v-model="priority" value="1"/>High
+      <input name="priority" type="radio" v-model="priority" value="2"/>Low
+      <input class="button" type="submit" value="Save item"/>
+    </form>
+    <ul>
+      <li v-for="(todo) in todos" v-bind:class="todo.priority == 1? 'high-priority' : 'low-priority'">
+        {{todo.name}}
+      </li>
+    </ul>
+  </div>
+</body>
+</html>
+
+<!-- v-model is going to create a link bewtween the interface and the data
+va a creear un link entre la interfas y la data -->
